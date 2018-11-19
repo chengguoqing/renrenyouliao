@@ -1,22 +1,70 @@
-body{
-    background: #F2F2F2;
+body {
+    background: #F6F6F6;
+    padding-bottom: 80px;
 }
-.bk{
-      box-shadow: 0 0px 2px rgba(0,0,0,.1);
+
+.bk {
+    box-shadow: 0 0px 2px rgba(0, 0, 0, .1);
 }
-.van-cell{
+
+.van-cell {
     padding-left: 10px;
     padding-right: 10px
 }
-.kaiguyane .van-switch{
+
+.kaiguyane .van-switch {
     width: 45px;
     height: 22px !important;
 }
-.kaiguyane .van-switch__node{
+
+.kaiguyane .van-switch__node {
     width: 22px;
-    
+
     height: 22px;
 }
-.kaiguyane  .van-switch--on{
+
+.kaiguyane .van-switch--on {
     background: #F25141;
+}
+
+.ln {
+    line-height: 1.5
+}
+
+.van-modal {
+    z-index: 101 !important;
+}
+
+.van-popup {
+    z-index: 102 !important;
+}
+
+.title_oiud .van-uploader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%
+}
+
+.kaiguyane {
+    position: absolute;
+    right: 0px;
+    top: 8px
+}
+
+.sdf_d_Ertx .van-tab {
+    color: #666
+}
+
+.sdf_d_Ertx .van-tab--active {
+    color: #333
+}
+
+.sdf_d_Ertx .van-tabs__line {
+    background-color: #333
+}
+
+.sd_dertx .van-popup {
+    border-radius: 4px;
 }
