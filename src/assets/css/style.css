@@ -1,0 +1,22 @@
+body{
+    background: #F2F2F2;
+}
+.bk{
+      box-shadow: 0 0px 2px rgba(0,0,0,.1);
+}
+.van-cell{
+    padding-left: 10px;
+    padding-right: 10px
+}
+.kaiguyane .van-switch{
+    width: 45px;
+    height: 22px !important;
+}
+.kaiguyane .van-switch__node{
+    width: 22px;
+    
+    height: 22px;
+}
+.kaiguyane  .van-switch--on{
+    background: #F25141;
+}
