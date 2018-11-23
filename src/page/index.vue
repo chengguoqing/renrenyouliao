@@ -3,15 +3,15 @@
 		<section class=" dsf_jh_derer">
 			<van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" left-icon="https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" />
 		</section>
-		<toububg class="mt40"></toububg>
+		<toububg class=""></toububg>
 
 
 		<section class="pd pr tinggf_dert">
-			<p class="cf tr fz14">千里耳,消息即价值.</p>
+			<p class="cf tr fz14 df_dfd_ert">千里耳,消息即价值.</p>
 			<section class="bk mt10 yj4 bgff ">
 
 				<section class="pd pm10">
-					<p class="title_oiud fz14">主标题</p>
+					<p class="title_oiud fz14 b">主标题</p>
 
 					<input type="text" placeholder="加个标题吧~(不超过18个字符)" class="jih_namer">
 
@@ -20,34 +20,20 @@
 				<van-collapse v-model="activeNames">
 					<van-collapse-item title="说明(免费内容)" name="1">
 						<textarea placeholder="尽情发挥吧" class="sd_jh_dert" rows="6"></textarea>
+                        
+                        
+                        <up_img></up_img>
 					</van-collapse-item>
 				</van-collapse>
 				<section class="pd pm10">
-					<p class="title_oiud fz14">付费内容</p>
+					<p class="title_oiud fz14 b">付费内容</p>
 
 					<textarea placeholder="尽情发挥吧" class="sd_jh_dert" rows="6"></textarea>
 				</section>
 
 				<section class="pd pm10">
-					<van-row gutter="10">
-						<van-col span="8" v-for="(sd,idx) in um_img">
-							<section class="pr">
-								<van-icon name="close" class="bgff df_deertt yj fz18" @click="closeer(idx)" />
-								<img :src="sd" class="df_jh_dsert">
-							</section>
-						</van-col>
-					</van-row>
-
-					<p class="title_oiud fz14 z6  pr">
-						<i class="dx icon-add z6 cz"></i>
-						添加图片
-						<van-uploader :after-read="onRead">
-
-						</van-uploader>
-
-
-					</p>
-
+				
+<up_img></up_img>
 				</section>
 
 
@@ -63,7 +49,7 @@
 					<van-tab title="单卖">
 
 						<section class="pd pm10">
-							<p class="title_oiud fz14">金额</p>
+							<p class="title_oiud fz14 b">金额</p>
 
 							<input type="text" placeholder="填写金额.元,0则为免费" class="jih_namer">
 
@@ -109,7 +95,7 @@
 
 
 
-							<section class="pd  btm pr" v-if="checked">
+							<section class="  btm pr" v-if="checked">
 								<p class="title_oiud fz14"> 到期免费看
 									<i class="dx  icon-iconfontwenhao1 fz14" @click="is_shjow_er=true"></i>
 								</p>
@@ -155,7 +141,7 @@
 						</section>
 
 						<section class="pd pm10">
-							<p class="title_oiud fz14">时长</p>
+							<p class="title_oiud fz14 b">时长</p>
 							<section class="sd_jh_drttx yj4 ">
 								<van-row gutter="5">
 									<van-col span="8" v-for="sd in jh_bs">
@@ -171,7 +157,7 @@
 						</section>
 
 						<section class="pd pm10 btm">
-							<p class="title_oiud fz14">金额</p>
+							<p class="title_oiud fz14 b">金额</p>
 
 							<input type="text" placeholder="填写金额.元" class="jih_namer">
 
@@ -304,203 +290,204 @@
 	</div>
 </template>
 <script>
-	import dibu from "../components/dibu"
-	import toububg from "../components/toububg"
-	export default {
-		data() {
-			return {
-				active: 0,
-				is_shjow: false,
-				checked: false, //限时售卖
-				checked_er: false, //不中必退
-				checked_san: false, //到期免费看
-				show_er: false,
-				is_shjow_er: false,
-				is_shjow_san: false,
-				checked_si: false, //付费内容开始查看时间
-				checked_wu: false, //是否允许代理售卖
-				activeNames: [],
-				um_img: [],
-				time_de: "",
-				time_yi: "",
-				is_time: 0, //0付费时间 1限售时间
-				minHour: 10,
-				maxHour: 20,
-				minDate: new Date(),
-				maxDate: new Date(2019, 10, 1),
-				currentDate: new Date(),
-				jh_bs: [{ //包时段时长
-					name: "包周",
-					cls: "",
-					num: "7"
-				}, {
-					name: "包月",
-					cls: "",
-					num: "30"
-				}, {
-					name: "自定义",
-					cls: "act",
-					num: ""
-				}],
-				jh_bs_er: [{ //售卖者比例
-					name: "20%",
-					cls: "",
-					num: "20"
-				}, {
-					name: "30%",
-					cls: "",
-					num: "30"
-				}, {
-					name: "自定义",
-					cls: "act",
-					num: ""
-				}],
-				tianshu: "",
-				tianshu_er: ""
-			}
-		},
-		components: {
-			dibu,
-			toububg
-		},
-		methods: {
-			closeer(idx) {
-				this.um_img.splice(idx, 1);
-			},
-			onRead(data) {
-				this.um_img.push(data.content)
-			},
-			queren(e) {
-				this.show_er = false
-				if (this.is_time == 0) {
-					this.time_yi = this.time_d(e)
-				}
-				if (this.is_time == 1) {
-					this.time_de = this.time_d(e)
-				}
 
-			},
-			gxsd(sd) {
-				this.jh_bs.map(a => {
-					a.cls = ""
-				})
-				sd.cls = "act"
-				this.tianshu = sd.num
-			},
-			gxsd_er(sd) {
-				this.jh_bs_er.map(a => {
-					a.cls = ""
-				})
-				sd.cls = "act"
-				this.tianshu_er = sd.num
-			}
+    import dibu from "../components/dibu"
+    import toububg from "../components/toububg"
+    import up_img from "../components/up_img"
+    export default {
+        data() {
+            return {
+                active: 0,
+                is_shjow: false,
+                checked: false, //限时售卖
+                checked_er: false, //不中必退
+                checked_san: false, //到期免费看
+                show_er: false,
+                is_shjow_er: false,
+                is_shjow_san: false,
+                checked_si: false, //付费内容开始查看时间
+                checked_wu: false, //是否允许代理售卖
+                activeNames: [],
+               
+                time_de: "",
+                time_yi: "",
+                is_time: 0, //0付费时间 1限售时间
+                minHour: 10,
+                maxHour: 20,
+                minDate: new Date(),
+                maxDate: new Date(2019, 10, 1),
+                currentDate: new Date(),
+                jh_bs: [{ //包时段时长
+                    name: "包周",
+                    cls: "",
+                    num: "7"
+                }, {
+                    name: "包月",
+                    cls: "",
+                    num: "30"
+                }, {
+                    name: "自定义",
+                    cls: "act",
+                    num: ""
+                }],
+                jh_bs_er: [{ //售卖者比例
+                    name: "20%",
+                    cls: "",
+                    num: "20"
+                }, {
+                    name: "30%",
+                    cls: "",
+                    num: "30"
+                }, {
+                    name: "自定义",
+                    cls: "act",
+                    num: ""
+                }],
+                tianshu: "",
+                tianshu_er: ""
+            }
+        },
+        components: {
+            dibu,
+            toububg,
+            up_img
+        },
+        methods: {
+            closeer(idx) {
+                this.um_img.splice(idx, 1);
+            },
+        
+        
+            queren(e) {
+                this.show_er = false
+                if (this.is_time == 0) {
+                    this.time_yi = this.time_d(e)
+                }
+                if (this.is_time == 1) {
+                    this.time_de = this.time_d(e)
+                }
 
-		},
-		mounted() {
+            },
+            gxsd(sd) {
+                this.jh_bs.map(a => {
+                    a.cls = ""
+                })
+                sd.cls = "act"
+                this.tianshu = sd.num
+            },
+            gxsd_er(sd) {
+                this.jh_bs_er.map(a => {
+                    a.cls = ""
+                })
+                sd.cls = "act"
+                this.tianshu_er = sd.num
+            }
 
-		},
-	}
+        },
+        mounted() {
+
+        },
+    }
+
 </script>
 <style>
 
 
 </style>
 <style scoped>
-	.d_ggaserr {
-		background: #F8ECDC;
-		color: #D7AA78;
-		line-height: 40px;
+    .d_ggaserr {
+        background: #F8ECDC;
+        color: #D7AA78;
+        line-height: 40px;
 
-	}
+    }
 
-	.right_icon {
-		position: absolute;
-		right: 10px;
-		top: 2px;
-	}
+    .right_icon {
+        position: absolute;
+        right: 10px;
+        top: 2px;
+    }
 
-	.title_oiud {
-		line-height: 40px;
-	}
+    .title_oiud {
+        line-height: 40px;
+    }
 
-	.jih_namer {
-		border: 0px;
-		width: 100%;
-		text-indent: 0px;
-		font-size: 14px;
-	}
+    .jih_namer {
+        border: 0px;
+        width: 100%;
+        text-indent: 0px;
+        font-size: 14px;
+    }
 
-	.sd_jh_dert {
-		text-indent: 0px;
-		font-size: 14px;
-		border: 0px;
-		width: 100%;
-	}
+    .sd_jh_dert {
+        text-indent: 0px;
+        font-size: 14px;
+        border: 0px;
+        width: 100%;
+    }
 
-	.df_jh_dsert {
-		width: 100%;
-		height: 7rem;
-	}
 
-	.df_deertt {
-		position: absolute;
-		right: 5px;
-		top: 5px;
-	}
+    .df_deertt {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
 
-	.dojhh_deert {
-		position: absolute;
-		right: 0px;
-	}
+    .dojhh_deert {
+        position: absolute;
+        right: 0px;
+    }
 
-	.sd_jh_drttx {
-		height: 45px;
-		line-height: 45px;
-		background: #F2F2F2;
-		padding: 5px;
-	}
+    .sd_jh_drttx {
+        height: 45px;
+        line-height: 45px;
+        background: #F2F2F2;
+        padding: 5px;
+    }
 
-	.sd_djhfgf {
-		line-height: 35px;
-		text-align: center;
-		font-size: 14px;
-		color: #666
-	}
+    .sd_djhfgf {
+        line-height: 35px;
+        text-align: center;
+        font-size: 14px;
+        color: #666
+    }
 
-	.sd_djhfgf.act {
-		background: #fff;
-		box-shadow: 0 0px 2px rgba(0, 0, 0, .1);
-		color: #333
-	}
+    .sd_djhfgf.act {
+        background: #fff;
+        box-shadow: 0 0px 2px rgba(0, 0, 0, .1);
+        color: #333
+    }
 
-	.Df_eerrt button {
-		height: 40px;
-		border: 0px;
-	}
+    .Df_eerrt button {
+        height: 40px;
+        border: 0px;
+    }
 
-	.sd_jhmt {
-		overflow: hidden;
-		width: 300px;
-	}
+    .sd_jhmt {
+        overflow: hidden;
+        width: 300px;
+    }
 
-	.dsf_jh_dert {
-		padding: 0px;
-		padding-left: 15px;
-		padding-right: 15px;
-		height: 30px;
-		line-height: 30px;
-	}
+    .dsf_jh_dert {
+        padding: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 30px;
+        line-height: 30px;
+    }
 
-	.dsf_jh_derer {
-		position: fixed;
-		left: 0px;
-		top: 0px;
-		z-index: 100;
-		width: 100%
-	}
+    .dsf_jh_derer {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        z-index: 100;
+        width: 100%
+    }
 
-	.tinggf_dert {
-		/*        padding-top: 100px;*/
-		margin-top: -90px;
-	}
+    .tinggf_dert {
+        /*        padding-top: 100px;*/
+        margin-top: -90px;
+    }
+
+ 
 </style>

@@ -37,6 +37,12 @@
 					size: "fz20",
 					cls: ""
 				}, {
+					name: "关注",
+					icon: "icon-xin",
+					href: "guanzhu",
+					size: "fz16",
+					cls: ""
+				},{
 					name: "我的",
 					icon: "icon-cc-user",
 					href: "user_info",
@@ -56,7 +62,7 @@
 </script>
 <style scoped>
 	.z3 {
-		color: #333 !important
+		color: #FF7C18 !important
 	}
 
 	.sd_dfert {
