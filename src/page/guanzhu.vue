@@ -5,7 +5,7 @@
 			<van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" left-icon="https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" />
 		</section>
 		<toububg class=""></toububg>
-    <section class="pd pr d_kjj_dertr">
+    <section class="pl5 pr5 pr d_kjj_dertr">
        		<van-tabs v-model="active">
        		    <van-tab title="新料提醒">
        		        <section class="s_jhdfg bk yj4 ov">
@@ -97,6 +97,9 @@
     .d_kjj_dertr{
         margin-top: -120px;
     }
-   
+   .sd_jhh_der {
+   padding: 0px 10px;
+       height: 26px;
+}
    
 </style>

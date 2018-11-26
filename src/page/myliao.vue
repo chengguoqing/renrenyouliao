@@ -5,10 +5,11 @@
 			<van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" left-icon="https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" />
 		</section>
 		<toububg class=""></toububg>
-    <section class="pd pr d_kjj_dertr">
+    <section class=" pr d_kjj_dertr pl5 pr5">
             		<van-tabs v-model="active">
-       		    <van-tab title="我卖的料">
-                    <section class="mt10" @click="hf('liaoxiangq')">
+       		    <van-tab title="我卖的料" class="pt5">
+             
+                    <section class="mb10" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 <section class="box mt5">
@@ -22,28 +23,28 @@
                 <section class="btm box mt10 pt10 pm10 cen">
                 <section class="box_a brm">
                     <p class="fz12">浏览</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">直售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">收益</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">代售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12 jzhh">收益(70%)</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                     
                         <section class="box_a ">
                     <p class="fz12">总收益</p>
-                    <p class="fz16 mt5 red">15</p>
+                    <p class="fz14 mt5 red">15</p>
                 </section>
     
                 </section>
@@ -60,7 +61,7 @@
                     
                     
                     
-                       <section class="mt10" @click="hf('liaoxiangq')">
+                       <section class="mb10" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 <section class="box mt5">
@@ -74,28 +75,28 @@
                 <section class="btm box mt10 pt10 pm10 cen">
                 <section class="box_a brm">
                     <p class="fz12">浏览</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">直售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">收益</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">代售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12 jzhh">收益(70%)</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                     
                         <section class="box_a ">
                     <p class="fz12">总收益</p>
-                    <p class="fz16 mt5 red">15</p>
+                    <p class="fz14 mt5 red">15</p>
                 </section>
     
                 </section>
@@ -111,7 +112,7 @@
                     
                     
                     
-                         <section class="mt10" @click="hf('liaoxiangq')" v-for="sd in 2">
+                         <section class="mb10" @click="hf('liaoxiangq')" v-for="sd in 2">
             <section class="bk yj4 pd pt10  bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 <section class="box mt5">
@@ -125,28 +126,28 @@
                 <section class="btm box mt10 pt10 pm10 cen">
                 <section class="box_a brm">
                     <p class="fz12">浏览</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">直售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">收益</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12">代售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         <section class="box_a brm">
                     <p class="fz12 jzhh">收益(70%)</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                     
                         <section class="box_a ">
                     <p class="fz12">总收益</p>
-                    <p class="fz16 mt5 red">15</p>
+                    <p class="fz14 mt5 red">15</p>
                 </section>
     
                 </section>
@@ -158,7 +159,7 @@
                 </section>
                     
                     
-                          <section class="mt10 tr fz12">
+                          <section class=" tr fz12">
                     共56条 <span>6页</span>
                         <span v-for="(sd,idx) in 5" class="ml10">{{idx+1}}</span>
                         
@@ -166,12 +167,13 @@
                               <van-button size="mini" type="default" class="sd_jhh_der ac">下一页</van-button>
                         
                     </section>
+                 
                 </van-tab>
                         
-                         <van-tab title="我代理的料">
+                         <van-tab title="我代理的料" class="pt5">
                              
                              
-                               <section class="mt10" @click="hf('liaoxiangq')">
+                               <section class="mb10" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 
@@ -188,18 +190,18 @@
                     <section class="btm box mt10 pt10 pm10 cen">
                 <section class="box_a brm">
                     <p class="fz12">浏览</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         
                              <section class="box_a brm">
                     <p class="fz12">代售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         
                         
                              <section class="box_a ">
                     <p class="fz12">总收益(30%)</p>
-                    <p class="fz16 mt5 red">19.2</p>
+                    <p class="fz14 mt5 red">19.2</p>
                 </section>
                         
     </section>
@@ -215,7 +217,7 @@
                              
                              
                              
-                             <section class="mt10" v-for="sd in 2" @click="hf('liaoxiangq')">
+                             <section class="mb10" v-for="sd in 2" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 
@@ -232,18 +234,18 @@
                     <section class="btm box mt10 pt10 pm10 cen">
                 <section class="box_a brm">
                     <p class="fz12">浏览</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         
                              <section class="box_a brm">
                     <p class="fz12">代售</p>
-                    <p class="fz16 mt5">15</p>
+                    <p class="fz14 mt5">15</p>
                 </section>
                         
                         
                              <section class="box_a ">
                     <p class="fz12">总收益(30%)</p>
-                    <p class="fz16 mt5 red">19.2</p>
+                    <p class="fz14 mt5 red">19.2</p>
                 </section>
                         
     </section>
@@ -257,7 +259,7 @@
                                    
     </section>
                              
-                    <section class="mt10 tr fz12">
+                    <section class=" tr fz12">
                     共56条 <span>6页</span>
                         <span v-for="(sd,idx) in 5" class="ml10">{{idx+1}}</span>
                         
@@ -266,9 +268,9 @@
                         
                     </section>           
                 </van-tab>
-                         <van-tab title="我买的料">
+                         <van-tab title="我买的料" class="pt5">
                              
-                                   <section class="mt10" v-for="sd in 2" @click="hf('liaoxiangq')">
+                                   <section class="mb10" v-for="sd in 2" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 
@@ -295,7 +297,7 @@
                              
                              
                              
-                                            <section class="mt10" v-for="sd in 2" @click="hf('liaoxiangq')">
+                                            <section class="mb10" v-for="sd in 2" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 
@@ -322,7 +324,7 @@
                   
                              
                              
-                                            <section class="mt10" v-for="sd in 2" @click="hf('liaoxiangq')">
+                                            <section class="mb10" v-for="sd in 2" @click="hf('liaoxiangq')">
             <section class="bk yj4 pd pt10 pm10 bgff ">
                <p class="fz14 z3 dian">双色球20150142期必中 包30天98元</p>
                 
@@ -344,7 +346,7 @@
     </section>
                   
                   
-                            <section class="mt10 tr fz12" @click="hf('liaoxiangq')">
+                            <section class=" tr fz12" @click="hf('liaoxiangq')">
                     共56条 <span>6页</span>
                         <span v-for="(sd,idx) in 5" class="ml10">{{idx+1}}</span>
                         

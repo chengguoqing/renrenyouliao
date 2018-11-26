@@ -9,6 +9,7 @@
           <img src="https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/upload_3fa96b9e84871da3ef5e5a54f2ad6600.jpg" class="yj user_icon cz">
         <span class="fz14  ml10">毒液</span>
         <van-icon name="qr" class="cz ml20"  @click="show=true"/>
+        <span class="fz12 ml10">独行工匠</span>
         
           <section class="yj4 bk bgff pd pt10 pm10 erdf_deert">
                 <p class="cen fz12">余额(元)</p>
@@ -16,7 +17,7 @@
                 384.3
                 </p>
               
-              <table class="cen fz12 w100 df_drrtyc ">
+              <table class="cen fz12 w100 df_drrtyc mt10 df_derert">
                     <thead>
                         <tr>
                             <td></td>
@@ -163,5 +164,15 @@
     .qc_deert img{
         width: 100%;
         height: 200px
+    }
+    .sd_jhh_der{
+        height: 38px;
+    }
+    .df_derert td{
+        line-height: 2.5;
+        border-right: 1px solid #F9F9F9
+    }
+    .df_derert tr td:last-child{
+        border: 0px;
     }
 </style>

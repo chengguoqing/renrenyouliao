@@ -17,7 +17,7 @@
             </p>
         </section>
     <section class="mt10 yj4 pd pt10 pm10 bgff bk">
-        <section class="bgye pd pt5  pm5 fz12 z3">
+        <section class="bgye pd pt5  pm5 fz14 z3">
    
             <span class="cz">
            <span class="">      此料代理售售返现<span class="red">30%</span>,快来赚钱。？</span>
@@ -37,7 +37,7 @@
             <span class="fz16 shumng_er ye">说明(免费内容)</span>
         </p>
            
-             <section class="fz12 z3 ln mt10">免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容
+             <section class="fz14 z3 ln mt10">免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容
         </section>
             
                	<van-row gutter="8">
@@ -46,10 +46,10 @@
                          	<img src="https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/upload_3fa96b9e84871da3ef5e5a54f2ad6600.jpg" class="df_jh_dsert">   
     </van-col>
     </van-row>
-            <section class="fz12 z3 mt5">
+            <section class="fz14 z3 mt5">
             以下更新于:2018-15 14:21:44
             </section>
-                <section class="fz12 z3 ln mt5">免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容
+                <section class="fz14 z3 ln mt5">免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容免费说明内容
         </section>
             
             
@@ -62,7 +62,7 @@
             <span class="fz16 shumng_er ye">收费内容</span>
         </p>
            
-             <section class="fz12 z3 ln mt10">老板,还没购买呢，看不了，点下面支付宝或微信付款
+             <section class="fz14 z3 ln mt10">老板,还没购买呢，看不了，点下面支付宝或微信付款
         </section>
               
               <section class="box mt10">
@@ -136,7 +136,12 @@
         width: 100%;
         height: 6.5rem;
     }
+    .sd_jhh_der{
+        padding: 0px 10px;
+        height: 27px;
+    }
     .sd_jhh_der.max{
+        height: 42px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -144,4 +149,5 @@
         width: 85px;
         height: 85px;
 }
+    
 </style>

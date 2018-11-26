@@ -4,21 +4,36 @@
 <!--		<p class="pt20 cf fz14 cen">长按图片保存并分享</p>-->
      
         
-		<section class="bung_sdf pt10">
+		<section class="bung_sdf pt10 pm20">
             
-               <section>
+    
             <p>
                 <span class="fz14 cf hsjh_dert">选择海报样式</span>
             </p>
-        </section>
+                   
+                   
+                   <section class="sd_jh_deert mt10">
+                    <section class="sd_jh_drxc" v-for="sd in sd_sf" :class="sd.cls" @click="sd_dff(sd)">
+                    <img src="../assets/img/liao.jpg">
+                    </section>
+            </section>
             
+                   
+                   
+                   
+                   
+  
             
+             
             
 			<section class=" yj4 dsf_deeertt mt10">
 				<img src="../assets/img/liao.jpg" class="w100 cz">
 			</section>
+            
+            
+            <p class="pt20 cf fz14 cen">长按图片保存并分享</p>
 
-			<van-row class="cen pt20 pm30">
+			<van-row class="cen pt20 pm20">
 				<van-col span="8">
 					<section class="sd_jh_Deertt" @click="tongzhi">
 						<p class="sd_hjert">
@@ -93,6 +108,31 @@
 
 
 
+            
+                  <p>
+                <span class="fz14 cf hsjh_dert">售卖配置</span>
+            </p>
+            
+            <section class="yj4 bk bgff pd pt10 mt10 pm10">
+            <p class="fz14 z3">单卖</p>
+                <section class="pl20 fz12 ln mt5">
+                        价格 N元<br>
+                    允许查看时间 不设置<br>
+                    售卖结束时间 2018/11/13 11:52 或 不设置<br>
+                    售卖结束后免费查看 关<br>
+                    不对包退 关
+                </section>
+                
+                     <p class="fz14 z3 mt5">允许代理售卖 开</p>
+                <section class="pl20 fz12 ln">
+                       给代理售卖者30%佣金
+                </section>
+                
+                
+    
+                </section>
+            
+            
 		</section>
 	</div>
 </template>
@@ -101,13 +141,44 @@
 		data() {
 			return {
 				istongzh: true,
-				gongkai: true
+				gongkai: true,
+                sd_sf:[
+                    {
+                        cls:"act"
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    },{
+                        cls:""
+                    }
+                ]
 			}
 		},
 		components: {
 
 		},
 		methods: {
+            sd_dff(sd){
+                this.sd_sf.map(a=>{
+                    a.cls=""
+                })
+                sd.cls="act"
+            },
 			tongzhi() {
 				if (this.istongzh) {
 					this.istongzh = false
@@ -174,5 +245,30 @@
         border-left: 2px solid #fff;
         padding-left: 10px;
         line-height: 1
+    }
+    
+       .sd_jh_deert{
+        white-space:nowrap;
+        overflow: auto;
+    }
+    .sd_jh_drxc{
+        width: 60px;
+        height: 80px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .sd_jh_drxc:last-child{
+        margin-right: 0px;
+    }
+    .sd_jh_drxc.act{
+
+        width: 62px;
+        height: 82px;
+
+        border: 1px solid #fff
+    }
+    .sd_jh_drxc img{
+        width: 100%;
+        height: 100%;
     }
 </style>
