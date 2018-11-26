@@ -1,9 +1,20 @@
 <!--查看料-->
 <template>
 	<div class="bg_deert">
-		<p class="pt20 cf fz14 cen">长按图片保存并分享</p>
-		<section class="bung_sdf mt20">
-			<section class=" yj4 dsf_deeertt">
+<!--		<p class="pt20 cf fz14 cen">长按图片保存并分享</p>-->
+     
+        
+		<section class="bung_sdf pt10">
+            
+               <section>
+            <p>
+                <span class="fz14 cf hsjh_dert">选择海报样式</span>
+            </p>
+        </section>
+            
+            
+            
+			<section class=" yj4 dsf_deeertt mt10">
 				<img src="../assets/img/liao.jpg" class="w100 cz">
 			</section>
 
@@ -15,7 +26,7 @@
 						</p>
 						<p class="cf fz14">{{istongzh?'通知粉丝':'已通知过粉丝'}} </p>
 					</section>
-
+ 
 				</van-col>
 				<van-col span="8">
 					<section class="sd_jh_Deertt" @click="gongkai_er">
@@ -135,6 +146,7 @@
 <style scoped>
 	.bg_deert {
 		background: url("../assets/img/bg.png") 100% 0 no-repeat #000;
+        		background: linear-gradient(to bottom, #FF6600, #FF9836);
 		background-size: 200% auto;
 		position: relative;
 		top: 80px;
@@ -158,4 +170,9 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+    .hsjh_dert{
+        border-left: 2px solid #fff;
+        padding-left: 10px;
+        line-height: 1
+    }
 </style>

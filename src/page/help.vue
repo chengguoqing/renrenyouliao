@@ -35,7 +35,7 @@
             }
         },
         components: {
-toububg
+            toububg
         },
         methods: {
 
@@ -47,7 +47,7 @@ toububg
 
 </script>
 <style scoped>
-     .d_kjj_dertr{
+    .d_kjj_dertr {
         margin-top: -100px;
     }
 

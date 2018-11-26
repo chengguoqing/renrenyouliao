@@ -217,7 +217,7 @@
 			<section class="mt20 pd">
 				<van-row gutter="10" class="Df_eerrt">
 					<van-col span="24">
-						<van-button type="danger" class="w100">创建</van-button>
+						<van-button type="danger" class="w100" @click="hf('chakanliao')">创建</van-button>
 					</van-col>
 					<!--
             <van-col span="6">
