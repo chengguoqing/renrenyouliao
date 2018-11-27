@@ -11,6 +11,11 @@ import './assets/css/style.css'
 import VueWechatTitle from 'vue-wechat-title';  
 Vue.use(VueWechatTitle)
 Vue.config.productionTip = false
+
+import VueParticles from 'vue-particles'  
+Vue.use(VueParticles)  
+
+
 Vue.use(Vant);
 Vue.use(public_c);
 new Vue({
