@@ -33,73 +33,79 @@
             
             <p class="pt20 cf fz14 cen">长按图片保存并分享</p>
 
-			<van-row class="cen pt20 pm20">
+			<van-row class="cen pt20 pm10" gutter="10">
 				<van-col span="8">
+                    <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt" @click="tongzhi">
 						<p class="sd_hjert">
 							<i class="dx icon-nitification cf fz30 cz"> </i>
 						</p>
 						<p class="cf fz14">{{istongzh?'通知粉丝':'已通知过粉丝'}} </p>
 					</section>
- 
+ </section>
 				</van-col>
 				<van-col span="8">
+                      <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt" @click="gongkai_er">
 						<p class="sd_hjert">
 							<i class="dx icon-suo cf fz26 cz"> </i>
 						</p>
 						<p class="cf fz14">
 							{{gongkai?"一键公开":"已公开"}}
-						</p>
+    </p></section>
 					</section>
 
 				</van-col>
 
 				<van-col span="8">
+                      <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt" @click="hf('shouyimx')">
 						<p class="sd_hjert">
 							<i class="dx icon-shouyi cf fz30 cz"> </i>
 						</p>
 						<p class="cf fz14">收益明细</p>
 					</section>
-
+    </section>
 				</van-col>
 
 
 
 
 				<van-col span="8">
+                      <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt">
 						<p class="sd_hjert">
 							<i class="dx icon-wenjian cf fz30 cz"> </i>
 						</p>
 						<p class="cf fz14">查看详情</p>
 					</section>
-
+    </section>
 				</van-col>
 
 
 
 				<van-col span="8">
+                      <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt">
 						<p class="sd_hjert">
 							<i class="dx icon-compile cf fz30 cz"> </i>
 						</p>
 						<p class="cf fz14">更新</p>
 					</section>
-
+    </section>
 				</van-col>
 
 
 
 				<van-col span="8">
+                      <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt" @click="sanchu">
 						<p class="sd_hjert">
 							<i class="dx icon-lajixiang cf fz30 cz"> </i>
 						</p>
 						<p class="cf fz14">删除</p>
 					</section>
-
+    </section>
 				</van-col>
 
 
@@ -235,12 +241,24 @@
 
 	.sd_hjert {
 		line-height: 35px;
+        display: inline-block;
 	}
 
 	.sd_jh_Deertt {
 		padding-top: 10px;
 		padding-bottom: 10px;
+         text-align: left !important;
 	}
+    .sd_jh_Deertt p i{
+        font-size: 16px !important;
+        margin-right: 5px;
+        
+    }
+    .sd_jh_Deertt p{
+        display: inline-block;
+        font-size: 12px !important;
+        text-align: left !important;
+    }
     .hsjh_dert{
         border-left: 2px solid #fff;
         padding-left: 10px;
@@ -270,5 +288,20 @@
     .sd_jh_drxc img{
         width: 100%;
         height: 100%;
+    }
+    .sd_jh_Deertt{
+        padding: 0px;
+    }
+    .dsfd_Drrttx{
+        margin-bottom: 10px;
+        background: #fff;
+        border-radius: 4px;
+        padding-left: 10px;
+        line-height: 1 !important;
+       
+      
+    }
+    .dsfd_Drrttx p,.dsfd_Drrttx p i{
+         color: #333 !important;
     }
 </style>
