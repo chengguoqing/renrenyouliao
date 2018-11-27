@@ -23,7 +23,7 @@
 					</van-row>
 
 					<p class="title_oiud fz14 z6  pr">
-						<i class="dx icon-add z6 cz"></i>
+						<i class="dx icon-xinjianliao-tianjiatupiantihuandiaoyuanlaidehao z6 cz"></i>
 						添加图片
 						<van-uploader :after-read="onRead">
 

@@ -26,7 +26,7 @@
 			return {
 				dibu: [{
 					name: "新建料",
-					icon: "icon-add",
+					icon: "icon-xinjianliao",
 					href: "",
 					size: "",
 					cls: ""

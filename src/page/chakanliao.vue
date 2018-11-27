@@ -1,7 +1,7 @@
 <!--查看料-->
 <template>
 	<div class="bg_deert">
-<!--		<p class="pt20 cf fz14 cen">长按图片保存并分享</p>-->
+<!--		<p class="pt20 cf fz16 cen">长按图片保存并分享</p>-->
      
         
 		<section class="bung_sdf pt10 pm20">
@@ -31,7 +31,7 @@
 			</section>
             
             
-            <p class="pt20 cf fz14 cen">长按图片保存并分享</p>
+            <p class="pt20 cf fz16 cen">长按图片保存并分享</p>
 
 			<van-row class="cen pt20 pm10" gutter="10">
 				<van-col span="8">
@@ -40,7 +40,7 @@
 						<p class="sd_hjert">
 							<i class="dx icon-nitification cf fz30 cz"> </i>
 						</p>
-						<p class="cf fz14">{{istongzh?'通知粉丝':'已通知过粉丝'}} </p>
+						<p class="cf fz16">{{istongzh?'通知粉丝':'已通知过粉丝'}} </p>
 					</section>
  </section>
 				</van-col>
@@ -50,7 +50,7 @@
 						<p class="sd_hjert">
 							<i class="dx icon-suo cf fz26 cz"> </i>
 						</p>
-						<p class="cf fz14">
+						<p class="cf fz16">
 							{{gongkai?"一键公开":"已公开"}}
     </p></section>
 					</section>
@@ -63,7 +63,7 @@
 						<p class="sd_hjert">
 							<i class="dx icon-shouyi cf fz30 cz"> </i>
 						</p>
-						<p class="cf fz14">收益明细</p>
+						<p class="cf fz16">收益明细</p>
 					</section>
     </section>
 				</van-col>
@@ -77,7 +77,7 @@
 						<p class="sd_hjert">
 							<i class="dx icon-wenjian cf fz30 cz"> </i>
 						</p>
-						<p class="cf fz14">查看详情</p>
+						<p class="cf fz16">查看详情</p>
 					</section>
     </section>
 				</van-col>
@@ -90,7 +90,7 @@
 						<p class="sd_hjert">
 							<i class="dx icon-compile cf fz30 cz"> </i>
 						</p>
-						<p class="cf fz14">更新</p>
+						<p class="cf fz16">更新</p>
 					</section>
     </section>
 				</van-col>
@@ -103,7 +103,7 @@
 						<p class="sd_hjert">
 							<i class="dx icon-lajixiang cf fz30 cz"> </i>
 						</p>
-						<p class="cf fz14">删除</p>
+						<p class="cf fz16">删除</p>
 					</section>
     </section>
 				</van-col>
@@ -294,8 +294,10 @@
     }
     .dsfd_Drrttx{
         margin-bottom: 10px;
-        background: #fff;
-        border-radius: 4px;
+/*	background: linear-gradient(to bottom, #FF6600, #FF9836);*/
+        background: #FF6600;
+            box-shadow: 0 4px 0 #FF9836;
+/*        border-radius: 4px;*/
         padding-left: 10px;
         line-height: 1 !important;
        

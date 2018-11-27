@@ -54,7 +54,7 @@
             <section class="yj4 bk bgff pd pt10  mt10">
             <section class="box">
                     <section class="box_a">
-       <van-button type="default" class="sd_jhh_der ad df_deert"  size="small">提现</van-button>
+       <van-button type="default" class="sd_jhh_der ad df_deert"  size="small"><i class="dx icon-wode-tixian fz14"></i> 提现</van-button>
                     </section>
                  <section class="box_a tr">
         <van-button type="default" class="sd_jhh_der ac"  size="small">粉丝14</van-button>
@@ -67,7 +67,8 @@
                 
                 <van-cell-group>
                     <van-cell  is-link v-for="sd in list_data" :to="sd.href">
-                    <img src="https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/upload_3fa96b9e84871da3ef5e5a54f2ad6600.jpg" class="yj user_icon_er cz">
+<!--                    <img src="https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/upload_3fa96b9e84871da3ef5e5a54f2ad6600.jpg" class="yj user_icon_er cz">-->
+                       <i class="dx z3" :class="[sd.icon,sd.size,sd.cls,sd.color]"></i>
         <span class="fz14  ml10">{{sd.name}}</span>    
     </van-cell>
                 </van-cell-group>
@@ -105,27 +106,44 @@
                 show: false,
                 list_data: [{
                     name: "自建料售卖明细",
+                    icon: "icon-wode-zijianliaoshoumaimingxi",
+                    color:"z0",
+					size: "",
                     href: "sale_subsidiary"
                 }, {
                     name: "代理料售卖明细",
+                     icon: "icon-wode-daililiaoshoumaimingxisvg",
+					size: "",
                     href: "sale_subsidiary"
                 }, {
                     name: "推广用户卖料提成统计",
+                     icon: "icon-wode-tuiguangyonghumailiaotichengtongji1",
+					size: "",
                     href: "commission_statistics"
                 }, {
                     name: "推广用户买料提成统计",
+                     icon: "icon-wode-tuiguangyonghumailiaotichengtongji",
+					size: "",
                     href: "commission_statistics"
                 }, {
                     name: "推广用户统计",
+                     icon: "icon-wode-tuiguangyonghutongji",
+					size: "",
                     href: "promotion_statistics"
                 }, {
                     name: "推广用户排行",
+                     icon: "icon-wode-tuiguangyonghupaihang",
+					size: "",
                     href: "seniority"
                 }, {
                     name: "消息",
+                     icon: "icon-wode-xiaoxi",
+					size: "",
                     href: "message"
                 }, {
                     name: "帮助",
+                     icon: "icon-wode-bangzhu",
+					size: "",
                     href: "help"
                 }]
             }
@@ -174,5 +192,8 @@
     }
     .df_derert tr td:last-child{
         border: 0px;
+    }
+    i.dx.z0{
+        color: #000 !important
     }
 </style>
