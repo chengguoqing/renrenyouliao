@@ -6,7 +6,7 @@
 		</section>
 		<toububg class=""></toububg>
     <section class=" pr d_kjj_dertr pd">
-            		<van-tabs v-model="active" swipeable>
+            		<van-tabs v-model="active" swipeable @change="sd_ddfrt">
        		    <van-tab title="我卖的料" class="pt5">
              
                     <section class="mb10" @click="hf('liaoxiangq')">
@@ -379,10 +379,12 @@
             toububg
 		},
 		methods: {
-
+            sd_ddfrt(){
+               window.scrollTo(0,0)
+            }
 		},
 		mounted() {
-
+window.scrollTo(0,0)
 		},
 	}
 </script>
@@ -404,4 +406,9 @@
         .d_kjj_dertr{
         margin-top: -120px;
     }
+    
+       .sd_jhh_der {
+   padding: 0px 10px;
+       height: 26px;
+}
 </style>

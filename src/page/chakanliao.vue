@@ -33,12 +33,12 @@
             
             <p class="pt20 cf fz16 cen">长按图片保存并分享</p>
 
-			<van-row class="cen pt20 pm10" gutter="10">
+			<van-row class="cen pt20 pm10" gutter="5">
 				<van-col span="8">
                     <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt" @click="tongzhi">
 						<p class="sd_hjert">
-							<i class="dx icon-nitification cf fz30 cz"> </i>
+							<i class="dx icon-nitification cf fz30 cz dfsdsdrrt"> </i>
 						</p>
 						<p class="cf fz16">{{istongzh?'通知粉丝':'已通知过粉丝'}} </p>
 					</section>
@@ -61,7 +61,7 @@
                       <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt" @click="hf('shouyimx')">
 						<p class="sd_hjert">
-							<i class="dx icon-shouyi cf fz30 cz"> </i>
+							<i class="dx icon-shouyi cf fz30 cz dfsdsdrrt"> </i>
 						</p>
 						<p class="cf fz16">收益明细</p>
 					</section>
@@ -75,7 +75,7 @@
                       <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt">
 						<p class="sd_hjert">
-							<i class="dx icon-wenjian cf fz30 cz"> </i>
+							<i class="dx icon-wenjian cf fz30 cz dfsdsdrrt"> </i>
 						</p>
 						<p class="cf fz16">查看详情</p>
 					</section>
@@ -88,9 +88,9 @@
                       <section class="dsfd_Drrttx">
 					<section class="sd_jh_Deertt">
 						<p class="sd_hjert">
-							<i class="dx icon-compile cf fz30 cz"> </i>
+							<i class="dx icon-compile cf fz30 cz dfsdsdrrt"> </i>
 						</p>
-						<p class="cf fz16">更新</p>
+						<p class="cf fz16 ">更新</p>
 					</section>
     </section>
 				</van-col>
@@ -231,7 +231,7 @@
 	}
 
 	.bung_sdf {
-		width: 310px;
+		width: 315px;
 		margin: auto;
 	}
 
@@ -251,7 +251,7 @@
 	}
     .sd_jh_Deertt p i{
         font-size: 16px !important;
-        margin-right: 5px;
+        margin-right: 2px;
         
     }
     .sd_jh_Deertt p{
@@ -294,16 +294,18 @@
     }
     .dsfd_Drrttx{
         margin-bottom: 10px;
-/*	background: linear-gradient(to bottom, #FF6600, #FF9836);*/
         background: #FF6600;
             box-shadow: 0 4px 0 #FF9836;
-/*        border-radius: 4px;*/
-        padding-left: 10px;
+
+        padding-left: 5px;
         line-height: 1 !important;
        
       
     }
     .dsfd_Drrttx p,.dsfd_Drrttx p i{
          color: #333 !important;
+    }
+    i.dfsdsdrrt.cz{
+        font-size: 20px !important
     }
 </style>

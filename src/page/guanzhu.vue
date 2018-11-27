@@ -6,7 +6,7 @@
 		</section>
 		<toububg class=""></toububg>
     <section class="pd pr d_kjj_dertr">
-       		<van-tabs v-model="active" swipeable>
+       		<van-tabs v-model="active" swipeable @change="sd_ddfrt">
        		    <van-tab title="新料提醒">
        		        <section class="s_jhdfg bk yj4 ov">
                         <ul>
@@ -81,13 +81,15 @@
         },
         components: {
             dibu,
-            toububg
+            toububg 
         },
         methods: {
-
+ sd_ddfrt(){
+               window.scrollTo(0,0)
+            }
         },
         mounted() {
-
+window.scrollTo(0,0)
         },
     }
 
